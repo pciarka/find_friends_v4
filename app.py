@@ -78,7 +78,7 @@ if os.path.exists(image_file):
     image = Image.open(image_file)
     new_width = int(image.width * 0.5)  # 50% oryginalnej szerokości
     new_height = int(image.height * 0.5)  # 50% oryginalnej wysokości
-    st.image(image, width=new_width, use_column_width=False)
+    st.image(image, width=new_width, use_container_width=False)
 else:
     st.write(f"Plik {image_file} nie istnieje.")
 same_cluster_df = all_df[all_df["Cluster"] == predicted_cluster_id]
