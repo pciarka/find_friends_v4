@@ -30,11 +30,11 @@ def get_cluster_names_and_descriptions():
     with open(CLUSTER_NAMES_AND_DESCRIPTIONS, "r", encoding='utf-8') as f:
         return json.loads(f.read())
 
-st.title("Znajdź przyjaciół.")
+st.title("Znajdź ziomów!!!")
 
 with st.sidebar:
-    st.header("Powiedz nam coś o sobie.")
-    st.markdown("Pomożemy znaleźć osoby do Ciebie")
+    st.header("Powiedz nam coś o sobie ziom")
+    st.markdown("Pomożemy Ziom znaleźć podobnych ZIOMALI i tyle w temacie")
     age= st.selectbox("Wiek", ['<18', '25-34', '45-54', '35-44', '18-24', '55-64', '>64'])
     edu_level = st.selectbox("Wykształcenie", ['Podstawowe', 'Średnie', 'Wyższe'])
     fav_animals = st.selectbox("Ulubione zwierzęta", ['Brak ulubionych', 'Psy', 'Koty', 'Inne', 'Koty i Psy'])
